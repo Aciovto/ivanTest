@@ -1,0 +1,15 @@
+public class FibonacciIterativo {
+    public static void main(String[] args) {
+        int n = 10; // Cantidad de términos que querés mostrar
+        int a = 0, b = 1;
+
+        System.out.println("Serie de Fibonacci de " + n + " términos:");
+        for (int i = 0; i < n; i++) {
+            System.out.print(a + " ");
+            int siguiente = a + b;
+            a = b;
+            b = siguiente;
+        }
+    }
+}
+
